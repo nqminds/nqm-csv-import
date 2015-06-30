@@ -130,5 +130,5 @@ node index truancy-config.js
 ```
 To get debug/diagnostic information switch on logging:
 ```
-DEBUG* node index trunacy-config.js
+DEBUG=* node index trunacy-config.js
 ```
