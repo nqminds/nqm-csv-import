@@ -17,13 +17,13 @@ When running in a streaming mode, the input stream is throttled so that it doesn
 
 The configuration file allows specification of a start and end point in the source file. This enables horizontal scaling, for example if 10 importers are attached to a hub it could instruct each importer to process a tenth of the data. The efficiency would depend on where the bottlenecks are I suppose.
 
-The CSV importer has been tested with several sample files. Performance is on the low side (see bulk inserts below), but acceptable. One of the samples is a 170Mb CSV file containing details of all vehicles involved in traffic accidents from 2005-2012, with almost 1M lines of data. I estimate this would take approximately 3 days to import, but once the import process starts the incoming data is available in the hub, and you can watch it arriving.
+The CSV importer has been tested with several sample files. Performance is on the low side (see bulk inserts below), but acceptable. Files with 1000s of lines are imported in minutes. One of the samples is a 170Mb CSV file containing details of all vehicles involved in traffic accidents from 2005-2012, with almost 1M lines of data. I estimate this would take approximately 3 days to import (mainly due to throttling rate of 750 bytes per second), but once the import process starts the incoming data is available in the hub, and you can watch it arriving. Enabling bulk updates would probably improve this considerably.
 
 ###ToDo
 - Bulk inserts. Currently each data row is added via an HTTP POST. This could easily be changed to update a batch of rows at a time and thereby decrease the HTTP overhead.
 - Updates. Currently rows are only added to the target dataset. This could easily be made to upsert.
 - Error recovery. Need to decide on a strategy, and ideally make it configurable. Currently if a single row fails (usually due to validation problems) it **doesn't** fail the entire import.
-- Tests. Write some.
+- Tests. Need to write some.
 - Schema changes. This is a hub issue rather than importing, but if the schema of the target dataset is changed and there is existing data the results are undefined!
 
 ##installation
