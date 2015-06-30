@@ -8,9 +8,11 @@ The idea is that a user will initiate the import through a separate component. T
 The next step is to provision an instance of the importer with the configuration file. The importer will most likely be running on a remote server. One possibility is that several importers will be running and 'listening' for configuration commands from the hub. 
 
 When the importer starts it can run in one of three modes. This is currently configured in the config file but it could be chosen dynamically. It may eventually transpire that only one of the modes makes sense for all cases:
-1. local - file is downloaded and then the entire contents are read into memory at once and processed. Fast but only suitable for small imports.
-2. localStream - similar to 1, the file is downloaded but instead of loading the entire file into memory a readable stream is created and piped into the parser. This is probably the most common mode.
-3. remoteStream - the file is not downloaded but streamed directly from the remote source and piped into the parser. Suitable if network connectivity is reliable.
+
+ 1. local - file is downloaded and then the entire contents are read into memory at once and processed. Fast but only suitable for small imports.
+ 2. localStream - similar to 1, the file is downloaded but instead of loading the entire file into memory a readable stream is created and piped into the parser. This is probably the most common mode.
+ 3. remoteStream - the file is not downloaded but streamed directly from the remote source and piped into the parser. Suitable if network connectivity is reliable.
+
 When running in a streaming mode, the input stream is throttled so that it doesn't overwhelm the parser. This makes it possible to process very large files as the processing is not limited to the available RAM. The throttle rate is currently configured in the config file, but again this could be made dynamic (nice project for an intern?).
 
 The configuration file allows specification of a start and end point in the source file. This enables horizontal scaling, for example if 10 importers are attached to a hub it could instruct each importer to process a tenth of the data. The efficiency would depend on where the bottlenecks are I suppose.
