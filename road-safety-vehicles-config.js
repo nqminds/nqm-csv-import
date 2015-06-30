@@ -8,14 +8,48 @@ module.exports = {
   "commandHost": "http://localhost:3102",
 
   /*
-   * The URI of the hub query api.
+   * The target dataset in the hub.
    */
-  "queryHost": "http://localhost:3104/v1",
+  "targetDataset": {
+    "id": "ds001",
+    "scheme": {
+      "fields": [
+        { "name": "accidentIndex", "storageType": "string", "key": true },
+        { "name": "vehicleRef", "storageType": "number", "key": true },
+        { "name": "vehicleType", "storageType": "number", "key": false },
+        { "name": "towing", "storageType": "date", "key": false },
+        { "name": "manoeuvre", "storageType": "date", "key": false },
+        { "name": "restrictedLane", "storageType": "number", "key": false },
+        { "name": "junction", "storageType": "number", "key": false },
+        { "name": "skidding", "storageType": "number", "key": false },
+        { "name": "objectIn", "storageType": "number", "key": false },
+        { "name": "leavingRoad", "storageType": "number", "key": false },
+        { "name": "objectOff", "storageType": "number", "key": false },
+        { "name": "firstImpact", "storageType": "number", "key": false },
+        { "name": "lhd", "storageType": "number", "key": false },
+        { "name": "journeyPurpose", "storageType": "number", "key": false },
+        { "name": "sex", "storageType": "number", "key": false },
+        { "name": "ageBand", "storageType": "number", "key": false },
+        { "name": "engineCC", "storageType": "number", "key": false },
+        { "name": "propulsion", "storageType": "number", "key": false },
+        { "name": "vehicleAge", "storageType": "number", "key": false },
+        { "name": "driverDecile", "storageType": "number", "key": false },
+        { "name": "driverHomeArea", "storageType": "number", "key": false }
+      ]
+    }
+  },
 
   /*
-   * The id of the target dataset in the hub.
+   * Define how the CSV columns will map to the schema defined in the dataset.
+   * The schemaMapping array will reflect the order of the columns in the CSV.
+   * If a target is defined for a column the data will be copied to the named field in the dataset.
+   * If there is no target property that column will be ignored.
+   *
+   * If there is no schemaMapping or the array is empty, the data will be copied to the field with the corresponding
+   * index in the dataset schema.
    */
-  "targetDataset": "ds001",
+  "schemaMapping": [
+  ],
 
   /*
    * The location of the source file.
@@ -58,36 +92,6 @@ module.exports = {
    * Specify -1 for the entire file.
    */
   "endLine": -1,
-
-  /*
-   * Define how the CSV columns will map to the schema defined in the dataset.
-   * The schemaMapping array will reflect the order of the columns in the CSV.
-   * If a target is defined for a column the data will be copied to the corresponding field in the dataset.
-   * If the target is 'false' it will be ignore.
-   */
-  "schemaMapping": [
-    { "target": "accidentIndex" },
-    { "target": "vehicleRef" },
-    { "target": "vehicleType"},
-    { "target": "towing" },
-    { "target": "manoeuvre" },
-    { "target": "restrictedLane"},
-    { "target": "junction"},
-    { "target": "skidding"},
-    { "target": "objectIn"},
-    { "target": "leavingRoad"},
-    { "target": "objectOff"},
-    { "target": "firstImpact"},
-    { "target": "lhd"},
-    { "target": "journeyPurpose"},
-    { "target": "sex"},
-    { "target": "ageBand"},
-    { "target": "engineCC"},
-    { "target": "propulsion"},
-    { "target": "vehicleAge"},
-    { "target": "driverDecile"},
-    { "target": "driverHomeArea"}
-  ],
 
   /*
    * Specifies how to throttle the input stream so that the parser doesn't get overwhelmed.

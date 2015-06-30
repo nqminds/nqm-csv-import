@@ -8,14 +8,34 @@ module.exports = {
   "commandHost": "http://localhost:3102",
 
   /*
-   * The URI of the hub query api.
+   * The target dataset in the hub.
    */
-  "queryHost": "http://localhost:3104/v1",
+  "targetDataset": {
+    "id":"ds001",
+    "scheme":{
+      "fields":[
+        {"name":"date","storageType":"date","key":true,"units":"date"},
+        {"name":"total-uk","storageType":"number","key":false},
+        {"name":"total-london","storageType":"number","key":false},
+        {"name":"employee-uk","storageType":"number","key":false},
+        {"name":"employee-london","storageType":"number","key":false},
+        {"name":"self-employed-uk","storageType":"number","key":false},
+        {"name":"self-employed-london","storageType":"number","key":false}
+      ]
+    }
+  },
 
   /*
-   * The id of the target dataset in the hub.
+   * Define how the CSV columns will map to the schema defined in the dataset.
+   * The schemaMapping array will reflect the order of the columns in the CSV.
+   * If a target is defined for a column the data will be copied to the named field in the dataset.
+   * If there is no target property that column will be ignored.
+   *
+   * If there is no schemaMapping or the array is empty, the data will be copied to the field with the corresponding
+   * index in the dataset schema.
    */
-  "targetDataset": "ds001",
+  "schemaMapping": [
+  ],
 
   /*
    * The location of the source file.
@@ -57,21 +77,5 @@ module.exports = {
    * The line at which processing is to stop.
    * Specify -1 for the entire file.
    */
-  "endLine": -1,
-
-  /*
-   * Define how the CSV columns will map to the schema defined in the dataset.
-   * The schemaMapping array will reflect the order of the columns in the CSV.
-   * If a target is defined for a column the data will be copied to the corresponding field in the dataset.
-   * If the target is 'false' it will be ignore.
-   */
-  "schemaMapping": [
-    { "target": "date" },      // Column 1
-    { "target": "total-uk"},      // Column 2
-    { "target": "total-london"},      // Column 3
-    { "target": "employee-uk" },  // Column 4
-    { "target": "employee-london" },       // Column 5
-    { "target": "self-employed-uk" },
-    { "target": "self-employed-london" }
-  ]
+  "endLine": -1
 };

@@ -8,14 +8,34 @@ module.exports = {
   "commandHost": "http://localhost:3102",
 
   /*
-   * The URI of the hub query api.
+   * The target dataset in the hub.
    */
-  "queryHost": "http://localhost:3104/v1",
+  "targetDataset": {
+    "id": "ds001",
+    "scheme": {
+      "fields": [
+        { "name": "ons", "storageType": "string", "key": true, "units": "onsGSS" },
+        { "name": "value", "storageType": "number", "key": false, "units": "percent" },
+        { "name": "area", "storageType": "string", "key": false }
+      ]
+    }
+  },
 
   /*
-   * The id of the target dataset in the hub.
+   * Define how the CSV columns will map to the schema defined in the dataset.
+   * The schemaMapping array will reflect the order of the columns in the CSV.
+   * If a target is defined for a column the data will be copied to the named field in the dataset.
+   * If there is no target property that column will be ignored.
+   *
+   * If there is no schemaMapping or the array is empty, the data will be copied to the field with the corresponding
+   * index in the dataset schema.
    */
-  "targetDataset": "ds001",
+  "schemaMapping": [
+    { "target": "ons" },      // copy data from csv column 1 to the 'ons' dataset field
+    {},                       // ignore data in column 2
+    { "target": "area"},      // copy data from csv column 3 to the 'area' dataset field
+    { "target": "value" }     // copy data from csv column 4 to the 'value' dataset field
+  ],
 
   /*
    * The location of the source file.
@@ -57,19 +77,5 @@ module.exports = {
    * The line at which processing is to stop.
    * Specify -1 for the entire file.
    */
-  "endLine": -1,
-
-  /*
-   * Define how the CSV columns will map to the schema defined in the dataset.
-   * The schemaMapping array will reflect the order of the columns in the CSV.
-   * If a target is defined for a column the data will be copied to the corresponding field in the dataset.
-   * If the target is 'false' it will be ignore.
-   */
-  "schemaMapping": [
-    { "target": "ons" },      // Column 1
-    { "target": false },      // Column 2
-    { "target": "area"},      // Column 3
-    { "target": "truancy" },  // Column 4
-    { "target": false }       // Column 5
-  ]
+  "endLine": -1
 };
