@@ -13,29 +13,27 @@ module.exports = {
   "targetDataset": {
     "id": "ds001",
     "scheme": {
-      "fields": [
-        { "name": "accidentIndex", "storageType": "string", "key": true },
-        { "name": "vehicleRef", "storageType": "number", "key": true },
-        { "name": "vehicleType", "storageType": "number", "key": false },
-        { "name": "towing", "storageType": "date", "key": false },
-        { "name": "manoeuvre", "storageType": "date", "key": false },
-        { "name": "restrictedLane", "storageType": "number", "key": false },
-        { "name": "junction", "storageType": "number", "key": false },
-        { "name": "skidding", "storageType": "number", "key": false },
-        { "name": "objectIn", "storageType": "number", "key": false },
-        { "name": "leavingRoad", "storageType": "number", "key": false },
-        { "name": "objectOff", "storageType": "number", "key": false },
-        { "name": "firstImpact", "storageType": "number", "key": false },
-        { "name": "lhd", "storageType": "number", "key": false },
-        { "name": "journeyPurpose", "storageType": "number", "key": false },
-        { "name": "sex", "storageType": "number", "key": false },
-        { "name": "ageBand", "storageType": "number", "key": false },
-        { "name": "engineCC", "storageType": "number", "key": false },
-        { "name": "propulsion", "storageType": "number", "key": false },
-        { "name": "vehicleAge", "storageType": "number", "key": false },
-        { "name": "driverDecile", "storageType": "number", "key": false },
-        { "name": "driverHomeArea", "storageType": "number", "key": false }
-      ]
+        "accidentIndex": "String",
+        "vehicleRef": "Number",
+        "vehicleType": "Number",
+        "towing": "Date",
+        "manoeuvre": "Date",
+        "restrictedLane": "Number",
+        "junction": "Number",
+        "skidding": "Number",
+        "objectIn": "Number",
+        "leavingRoad": "Number",
+        "objectOff": "Number",
+        "firstImpact": "Number",
+        "lhd": "Number",
+        "journeyPurpose": "Number",
+        "sex": "Number",
+        "ageBand": "Number",
+        "engineCC": "Number",
+        "propulsion": "Number",
+        "vehicleAge": "Number",
+        "driverDecile": "Number",
+        "driverHomeArea": "Number"
     }
   },
 
@@ -44,11 +42,29 @@ module.exports = {
    * The schemaMapping array will reflect the order of the columns in the CSV.
    * If a target is defined for a column the data will be copied to the named field in the dataset.
    * If there is no target property that column will be ignored.
-   *
-   * If there is no schemaMapping or the array is empty, the data will be copied to the field with the corresponding
-   * index in the dataset schema.
    */
   "schemaMapping": [
+    {target: "accidentIndex"},
+    {target: "vehicleRef"},
+    {target: "vehicleType"},
+    {target: "towing"},
+    {target: "manoeuvre"},
+    {target: "restrictedLane"},
+    {target: "junction"},
+    {target: "skidding"},
+    {target: "objectIn"},
+    {target: "leavingRoad"},
+    {target: "objectOff"},
+    {target: "firstImpact"},
+    {target: "lhd"},
+    {target: "journeyPurpose"},
+    {target: "sex"},
+    {target: "ageBand"},
+    {target: "engineCC"},
+    {target: "propulsion"},
+    {target: "vehicleAge"},
+    {target: "driverDecile"},
+    {target: "driverHomeArea"}
   ],
 
   /*

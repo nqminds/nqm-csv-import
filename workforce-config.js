@@ -11,17 +11,20 @@ module.exports = {
    * The target dataset in the hub.
    */
   "targetDataset": {
-    "id":"ds001",
-    "scheme":{
-      "fields":[
-        {"name":"date","storageType":"date","key":true,"units":"date"},
-        {"name":"total-uk","storageType":"number","key":false},
-        {"name":"total-london","storageType":"number","key":false},
-        {"name":"employee-uk","storageType":"number","key":false},
-        {"name":"employee-london","storageType":"number","key":false},
-        {"name":"self-employed-uk","storageType":"number","key":false},
-        {"name":"self-employed-london","storageType":"number","key":false}
-      ]
+    "id":"ds004",
+    "scheme": {
+      "date": "Date",
+      "total": {
+        "uk": "Number",
+        "london": "Number"
+      },
+      "employee": {
+        "uk": "Number",
+        "london": "Number"
+      },
+      "nested": {
+        "self-employed": [ "Number" ]
+      }
     }
   },
 
@@ -30,11 +33,15 @@ module.exports = {
    * The schemaMapping array will reflect the order of the columns in the CSV.
    * If a target is defined for a column the data will be copied to the named field in the dataset.
    * If there is no target property that column will be ignored.
-   *
-   * If there is no schemaMapping or the array is empty, the data will be copied to the field with the corresponding
-   * index in the dataset schema.
    */
   "schemaMapping": [
+    { target: "date" },
+    { target: "total.uk" },
+    { target: "total.london" },
+    { target: "employee.uk" },
+    { target: "employee.london" },
+    { target: "nested.self-employed" },
+    { target: "nested.self-employed" }
   ],
 
   /*

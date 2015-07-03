@@ -13,24 +13,17 @@ module.exports = {
   "targetDataset": {
     "id": "ds001",
     "scheme": {
-      "fields": [
-        { "name": "ons", "storageType": "string", "key": true, "units": "onsGSS" },
-        { "name": "value", "storageType": "number", "key": false, "units": "percent" },
-        { "name": "area", "storageType": "string", "key": false }
-      ]
+      "ons": "String",
+      "value": "Number",
+      "area": "String"
     }
   },
 
   /*
    * Define how the CSV columns will map to the schema defined in the dataset.
    * The schemaMapping array will reflect the order of the columns in the CSV.
-   * If a target is defined for a column the data will be copied to the named
-   * field in the dataset.
-   *
+   * If a target is defined for a column the data will be copied to the named field in the dataset.
    * If there is no target property that column will be ignored.
-   *
-   * If there is no schemaMapping or the array is empty, the data will be
-   * copied to the field with the corresponding index in the dataset schema.
    */
   "schemaMapping": [
     { "target": "ons" },  // copy data from csv column 1 to the 'ons' field

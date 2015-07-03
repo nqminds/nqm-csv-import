@@ -13,19 +13,17 @@ module.exports = {
   "targetDataset": {
     "id": "ds001",
     "scheme": {
-      "fields": [
-        { "name": "period", "description": "Period and financial year", "storageType": "string", "key": true },
-        { "name": "reportingPeriod", "storageType": "number", "key": false },
-        { "name": "daysInPeriod", "storageType": "number", "key": false },
-        { "name": "periodBegin", "storageType": "date", "key": false },
-        { "name": "periodEnds", "storageType": "date", "key": false },
-        { "name": "bus", "storageType": "number", "key": false },
-        { "name": "underground", "storageType": "number", "key": false },
-        { "name": "dlr", "storageType": "number", "key": false },
-        { "name": "tram", "storageType": "number", "key": false },
-        { "name": "overground", "storageType": "number", "key": false },
-        { "name": "emirates", "storageType": "number", "key": false }
-      ]
+        "period": "String",
+        "reportingPeriod": "Number",
+        "daysInPeriod": "Number",
+        "periodBegin": "Date",
+        "periodEnds": "Date",
+        "bus": "Number",
+        "underground": "Number",
+        "dlr": "Number",
+        "tram": "Number",
+        "overground": "Number",
+        "emirates": "Number"
     }
   },
 
@@ -34,11 +32,19 @@ module.exports = {
    * The schemaMapping array will reflect the order of the columns in the CSV.
    * If a target is defined for a column the data will be copied to the named field in the dataset.
    * If there is no target property that column will be ignored.
-   *
-   * If there is no schemaMapping or the array is empty, the data will be copied to the field with the corresponding
-   * index in the dataset schema.
    */
   "schemaMapping": [
+    { target: "period" },
+    { target: "reportingPeriod" },
+    { target: "daysInPeriod" },
+    { target: "periodBegin" },
+    { target: "periodEnds" },
+    { target: "bus" },
+    { target: "underground" },
+    { target: "dlr" },
+    { target: "tram" },
+    { target: "overground" },
+    { target: "emirates" }
   ],
 
   /*
