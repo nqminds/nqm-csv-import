@@ -11,7 +11,7 @@ module.exports = {
    * The target dataset in the hub.
    */
   "targetDataset": {
-    "id":"ds004",
+    "id":"ds001",
     "scheme": {
       "date": "Date",
       "total": {
