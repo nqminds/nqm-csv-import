@@ -11,7 +11,7 @@ module.exports = {
    * The target dataset in the hub.
    */
   "targetDataset": {
-    "id": "ds001",
+    "id": "dataset-3EHDx6",
     "scheme": {
         "accidentIndex": "String",
         "vehicleRef": "Number",
@@ -114,5 +114,7 @@ module.exports = {
    * Use this to
    * Value is bytes/second.
    */
-  "throttleRate": 750
+  "throttleRate": 50000,
+
+  "bulkMode": true
 };
