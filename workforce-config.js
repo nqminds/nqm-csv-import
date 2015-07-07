@@ -45,9 +45,14 @@ module.exports = {
   ],
 
   /*
-   * The location of the source file.
+   * Remote location of the source file.
    */
   "sourceUrl": "http://two268.com/nqm/workforce-jobs-ons.csv",
+
+  /*
+   * Alternatively, specify the absolute path to a local file.
+   */
+  "sourceFile": "/home/user/imports/file.csv",
 
   /*
    * The processing mode - need to experiment with which is more performant, but there may be some cases
