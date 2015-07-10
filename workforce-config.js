@@ -25,7 +25,11 @@ module.exports = {
       "nested": {
         "self-employed": [ "Number" ]
       }
-    }
+    },
+    uniqueIndex: [
+      "date",
+      " nested.self-employed"
+    ]
   },
 
   /*

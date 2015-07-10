@@ -5,18 +5,20 @@ module.exports = {
   /*
    * The URI of the hub command api.
    */
-  "commandHost": "http://localhost:3102",
+//  "commandHost": "http://localhost:3102",
+  "commandHost": "http://cmd.nqminds.com",
 
   /*
    * The target dataset in the hub.
    */
   "targetDataset": {
-    "id": "dataset-3P8mKf",
+    "id": "dataset-ProO3d",
     "scheme": {
       "ons": "String",
       "value": "Number",
-      "area": "String"
-    }
+      "name": "String"
+    },
+    "uniqueIndex": ["ons"]
   },
 
   /*
@@ -28,14 +30,14 @@ module.exports = {
   "schemaMapping": [
     { "target": "ons" },  // copy data from csv column 1 to the 'ons' field
     {},                   // ignore data in column 2
-    { "target": "area"},  // copy data from csv column 3 to the 'area' field
+    { "target": "name"},  // copy data from csv column 3 to the 'area' field
     { "target": "value"}  // copy data from csv column 4 to the 'value' field
   ],
 
   /*
    * The location of the source file.
    */
-  "sourceUrl": "http://two268.com/nqm/formatted_truancy.csv",
+  "sourceFile": "/home/toby/Downloads/formatted_truancy.csv",
 
   /*
    * The processing mode - need to experiment with which is more performant,
