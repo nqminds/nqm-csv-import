@@ -4,32 +4,35 @@
 module.exports = {
   bulkMode: true,
   upsertMode: true,
-
+  
   /*
    * The URI of the hub command api.
    */
   "commandHost": "http://localhost:3103",
 //  "commandHost": "http://cmd.nqminds.com",
-
+  
   /*
    * Access token credentials
    */
-  "credentials": "EJQ_SPh-g:password",
+  "credentials": "EyERKqnWg:password",
   
   /*
    * The target dataset in the hub.
    */
   "targetDataset": {
-    "id": "4JewQ6Uh-g",
+    "id": "NyYCBc3We",
     "scheme": {
-      "ecode": "String",
-      "name": "String",
-      "year": "String",
-      "value": "Number"
+      "District": "String",
+      "LSOA": "String",
+      "Year": "Number",
+      "Gender": "String",
+      "Age": "String",
+      "Value": "Number",
+      "Production Date": "Number"
     },
-    "uniqueIndex": ["ecode"]
+    "uniqueIndex": []
   },
-
+  
   /*
    * Define how the CSV columns will map to the schema defined in the dataset.
    * The schemaMapping array will reflect the order of the columns in the CSV.
@@ -37,17 +40,20 @@ module.exports = {
    * If there is no target property that column will be ignored.
    */
   "schemaMapping": [
-    { "target": "ecode" },  // copy data from csv column 1 to the 'ons' field
-    { "target": "name" }, 
-    { "target": "year"},  // copy data from csv column 3 to the 'area' field
-    { "target": "value"}  // copy data from csv column 4 to the 'value' field
+    { "target": "District" },  // copy data from csv column 1 to the 'ons' field
+    { "target": "LSOA" },
+    { "target": "Year"},  // copy data from csv column 3 to the 'area' field
+    { "target": "Gender"},
+    { "target": "Age" },
+    { "target": "Value" },
+    { "target": "Production Date" },
   ],
-
+  
   /*
    * The location of the source file.
    */
-  "sourceFile": "/home/toby/Downloads/tempPerTru.csv",
-
+  "sourceFile": "/home/toby/Downloads/tempHccPopForecasts.csv",
+  
   /*
    * The processing mode - need to experiment with which is more performant,
    * but there may be some cases where it's desirable to download the file and
@@ -66,22 +72,22 @@ module.exports = {
    * remote url into the parser and processed as data becomes available.
    */
   "processingMode": "local",
-
+  
   /*
    * The delimiter used in the source file.
    */
   "delimiter": ",",
-
+  
   /*
    * Expected encoding of source data.
    */
   "encoding": "utf8",
-
+  
   /*
    * The line at which processing is to start.
    */
   "startLine": 1,
-
+  
   /*
    * The line at which processing is to stop.
    * Specify -1 for the entire file.
