@@ -3,7 +3,9 @@
 
 module.exports = {
   bulkMode: true,
-  upsertMode: true,
+  bulkCount: 100,
+  throttleRate: 10000,
+  upsertMode: false,
   
   /*
    * The URI of the hub command api.
@@ -14,24 +16,25 @@ module.exports = {
   /*
    * Access token credentials
    */
-  "credentials": "EyERKqnWg:password",
+  "credentials": "VJleEe7EMl:password",
   
   /*
    * The target dataset in the hub.
-   */
+   *
   "targetDataset": {
-    "id": "NyYCBc3We",
+    "id": "4kWXexXEfe",
     "scheme": {
-      "District": "String",
-      "LSOA": "String",
+      "District": { type: "String" },
+      "LSOA": { type: "String" },
       "Year": "Number",
-      "Gender": "String",
-      "Age": "String",
+      "Gender": { type: "String"},
+      "Age": { type: "String"},
       "Value": "Number",
-      "Production Date": "Number"
+      "Production Date": { type: "Number" }
     },
-    "uniqueIndex": []
   },
+*/
+  "primaryKey": [],
   
   /*
    * Define how the CSV columns will map to the schema defined in the dataset.
@@ -39,15 +42,15 @@ module.exports = {
    * If a target is defined for a column the data will be copied to the named field in the dataset.
    * If there is no target property that column will be ignored.
    */
-  "schemaMapping": [
-    { "target": "District" },  // copy data from csv column 1 to the 'ons' field
-    { "target": "LSOA" },
-    { "target": "Year"},  // copy data from csv column 3 to the 'area' field
-    { "target": "Gender"},
-    { "target": "Age" },
-    { "target": "Value" },
-    { "target": "Production Date" },
-  ],
+  "schemaMapping": {
+    "District": "District",  // copy data from csv column 1 to the 'ons' field
+    "LSOA": "LSOA",
+    "Year": "Year",
+    "Gender": "Gender",
+    "Age": "Age",
+    "Value": "Value",
+    "Production Date": "Production Date"
+  },
   
   /*
    * The location of the source file.
@@ -71,7 +74,7 @@ module.exports = {
    * remoteStream => file is not downloaded but streamed directly from the
    * remote url into the parser and processed as data becomes available.
    */
-  "processingMode": "local",
+  "processingMode": "localStream",
   
   /*
    * The delimiter used in the source file.
