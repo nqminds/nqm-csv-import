@@ -5,6 +5,11 @@
 "use strict";
 
 module.exports = {
+  bulkMode: true,
+  bulkCount: 100,
+  throttleRate: 10000,
+  upsertMode: false,
+
   /*
    * The URI of the hub command api.
    */
@@ -13,11 +18,10 @@ module.exports = {
   /*
    * Access token credentials
    */
-  "credentials": "",
+  "credentials": "4kClAjSzg:password",
   
   /*
    * The target dataset in the hub.
-   */
   "targetDataset": {
     "id": "dataset-QpMRrY",
     "scheme": {
@@ -34,13 +38,13 @@ module.exports = {
       "emirates": "Number"
     }
   },
+   */
   
   /*
    * Define how the CSV columns will map to the schema defined in the dataset.
    * The schemaMapping array will reflect the order of the columns in the CSV.
    * If a target is defined for a column the data will be copied to the named field in the dataset.
    * If there is no target property that column will be ignored.
-   */
   "schemaMapping": [
     { target: "GP_PRACTICE" },
     { target: "reportingPeriod" },
@@ -54,11 +58,12 @@ module.exports = {
     { target: "overground" },
     { target: "emirates" }
   ],
+   */
   
   /*
    * The location of the source file.
    */
-  "sourceUrl": "http://two268.com/nqm/tfl-journeys.csv",
+  "sourceFile": "/home/toby/Downloads/tempGpPatientsAge.csv",
   
   /*
    * The processing mode - need to experiment with which is more performant, but there may be some cases
@@ -74,26 +79,5 @@ module.exports = {
    * remoteStream => file is not downloaded but streamed directly from the remote url into the parser and processed
    * as data becomes available.
    */
-  "processingMode": "remoteStream",
-  
-  /*
-   * The delimiter used in the source file.
-   */
-  "delimiter": ",",
-  
-  /*
-   * Expected encoding of source data.
-   */
-  "encoding": "utf8",
-  
-  /*
-   * The line at which processing is to start.
-   */
-  "startLine": 1,
-  
-  /*
-   * The line at which processing is to stop.
-   * Specify -1 for the entire file.
-   */
-  "endLine": -1
+  "processingMode": "localStream",
 };

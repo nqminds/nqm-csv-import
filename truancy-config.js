@@ -65,7 +65,7 @@ module.exports = {
    * remoteStream => file is not downloaded but streamed directly from the
    * remote url into the parser and processed as data becomes available.
    */
-  "processingMode": "local",
+  "processingMode": "localStream",
 
   /*
    * The delimiter used in the source file.
