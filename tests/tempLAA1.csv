@@ -1,0 +1,609 @@
+ecode,name,year,rate
+841,Darlington,2011,82.0
+841,Darlington,2012,90.0
+841,Darlington,2013,91.0
+841,Darlington,2014,83.0
+840,Durham,2011,53.0
+840,Durham,2012,66.0
+840,Durham,2013,63.0
+840,Durham,2014,60.0
+390,Gateshead,2011,91.0
+390,Gateshead,2012,95.0
+390,Gateshead,2013,96.0
+390,Gateshead,2014,89.0
+805,Hartlepool,2011,80.0
+805,Hartlepool,2012,85.0
+805,Hartlepool,2013,92.0
+805,Hartlepool,2014,103.0
+806,Middlesbrough,2011,104.0
+806,Middlesbrough,2012,111.0
+806,Middlesbrough,2013,114.0
+806,Middlesbrough,2014,112.0
+391,Newcastle Upon Tyne,2011,99.0
+391,Newcastle Upon Tyne,2012,101.0
+391,Newcastle Upon Tyne,2013,100.0
+391,Newcastle Upon Tyne,2014,102.0
+392,North Tyneside,2011,69.0
+392,North Tyneside,2012,74.0
+392,North Tyneside,2013,73.0
+392,North Tyneside,2014,75.0
+929,Northumberland,2011,43.0
+929,Northumberland,2012,45.0
+929,Northumberland,2013,52.0
+929,Northumberland,2014,54.0
+807,Redcar and Cleveland,2011,53.0
+807,Redcar and Cleveland,2012,62.0
+807,Redcar and Cleveland,2013,63.0
+807,Redcar and Cleveland,2014,64.0
+393,South Tyneside,2011,106.0
+393,South Tyneside,2012,107.0
+393,South Tyneside,2013,108.0
+393,South Tyneside,2014,105.0
+808,Stockton-On-Tees,2011,69.0
+808,Stockton-On-Tees,2012,80.0
+808,Stockton-On-Tees,2013,86.0
+808,Stockton-On-Tees,2014,90.0
+394,Sunderland,2011,74.0
+394,Sunderland,2012,71.0
+394,Sunderland,2013,80.0
+394,Sunderland,2014,90.0
+889,Blackburn with Darwen,2011,94.0
+889,Blackburn with Darwen,2012,93.0
+889,Blackburn with Darwen,2013,89.0
+889,Blackburn with Darwen,2014,89.0
+890,Blackpool,2011,136.0
+890,Blackpool,2012,150.0
+890,Blackpool,2013,166.0
+890,Blackpool,2014,152.0
+350,Bolton,2011,81.0
+350,Bolton,2012,80.0
+350,Bolton,2013,83.0
+350,Bolton,2014,81.0
+351,Bury,2011,77.0
+351,Bury,2012,78.0
+351,Bury,2013,76.0
+351,Bury,2014,73.0
+895,Cheshire East,2011,59.0
+895,Cheshire East,2012,59.0
+895,Cheshire East,2013,50.0
+895,Cheshire East,2014,45.0
+896,Cheshire West and Chester,2011,53.0
+896,Cheshire West and Chester,2012,56.0
+896,Cheshire West and Chester,2013,58.0
+896,Cheshire West and Chester,2014,67.0
+909,Cumbria,2011,53.0
+909,Cumbria,2012,62.0
+909,Cumbria,2013,67.0
+909,Cumbria,2014,71.0
+876,Halton,2011,45.0
+876,Halton,2012,44.0
+876,Halton,2013,52.0
+876,Halton,2014,75.0
+340,Knowsley,2011,86.0
+340,Knowsley,2012,78.0
+340,Knowsley,2013,73.0
+340,Knowsley,2014,80.0
+888,Lancashire,2011,53.0
+888,Lancashire,2012,54.0
+888,Lancashire,2013,61.0
+888,Lancashire,2014,65.0
+341,Liverpool,2011,106.0
+341,Liverpool,2012,105.0
+341,Liverpool,2013,106.0
+341,Liverpool,2014,111.0
+352,Manchester,2011,131.0
+352,Manchester,2012,121.0
+352,Manchester,2013,117.0
+352,Manchester,2014,122.0
+353,Oldham,2011,60.0
+353,Oldham,2012,57.0
+353,Oldham,2013,61.0
+353,Oldham,2014,69.0
+354,Rochdale,2011,89.0
+354,Rochdale,2012,88.0
+354,Rochdale,2013,99.0
+354,Rochdale,2014,105.0
+355,Salford,2011,116.0
+355,Salford,2012,109.0
+355,Salford,2013,105.0
+355,Salford,2014,111.0
+343,Sefton,2011,70.0
+343,Sefton,2012,73.0
+343,Sefton,2013,79.0
+343,Sefton,2014,75.0
+342,St Helens,2011,94.0
+342,St Helens,2012,92.0
+342,St Helens,2013,121.0
+342,St Helens,2014,119.0
+356,Stockport,2011,49.0
+356,Stockport,2012,49.0
+356,Stockport,2013,50.0
+356,Stockport,2014,49.0
+357,Tameside,2011,77.0
+357,Tameside,2012,80.0
+357,Tameside,2013,80.0
+357,Tameside,2014,87.0
+358,Trafford,2011,50.0
+358,Trafford,2012,53.0
+358,Trafford,2013,55.0
+358,Trafford,2014,60.0
+877,Warrington,2011,56.0
+877,Warrington,2012,54.0
+877,Warrington,2013,51.0
+877,Warrington,2014,52.0
+359,Wigan,2011,68.0
+359,Wigan,2012,71.0
+359,Wigan,2013,75.0
+359,Wigan,2014,73.0
+344,Wirral,2011,100.0
+344,Wirral,2012,99.0
+344,Wirral,2013,98.0
+344,Wirral,2014,99.0
+370,Barnsley,2011,50.0
+370,Barnsley,2012,47.0
+370,Barnsley,2013,48.0
+370,Barnsley,2014,46.0
+380,Bradford,2011,65.0
+380,Bradford,2012,66.0
+380,Bradford,2013,64.0
+380,Bradford,2014,64.0
+381,Calderdale,2011,72.0
+381,Calderdale,2012,78.0
+381,Calderdale,2013,73.0
+381,Calderdale,2014,70.0
+371,Doncaster,2011,69.0
+371,Doncaster,2012,78.0
+371,Doncaster,2013,77.0
+371,Doncaster,2014,77.0
+811,East Riding of Yorkshire,2011,47.0
+811,East Riding of Yorkshire,2012,49.0
+811,East Riding of Yorkshire,2013,53.0
+811,East Riding of Yorkshire,2014,49.0
+810,"Kingston Upon Hull, City of",2011,114.0
+810,"Kingston Upon Hull, City of",2012,113.0
+810,"Kingston Upon Hull, City of",2013,118.0
+810,"Kingston Upon Hull, City of",2014,117.0
+382,Kirklees,2011,61.0
+382,Kirklees,2012,66.0
+382,Kirklees,2013,67.0
+382,Kirklees,2014,62.0
+383,Leeds,2011,94.0
+383,Leeds,2012,95.0
+383,Leeds,2013,87.0
+383,Leeds,2014,85.0
+812,North East Lincolnshire,2011,42.0
+812,North East Lincolnshire,2012,45.0
+812,North East Lincolnshire,2013,58.0
+812,North East Lincolnshire,2014,77.0
+813,North Lincolnshire,2011,46.0
+813,North Lincolnshire,2012,48.0
+813,North Lincolnshire,2013,47.0
+813,North Lincolnshire,2014,48.0
+815,North Yorkshire,2011,39.0
+815,North Yorkshire,2012,41.0
+815,North Yorkshire,2013,41.0
+815,North Yorkshire,2014,39.0
+372,Rotherham,2011,69.0
+372,Rotherham,2012,68.0
+372,Rotherham,2013,70.0
+372,Rotherham,2014,70.0
+373,Sheffield,2011,56.0
+373,Sheffield,2012,54.0
+373,Sheffield,2013,47.0
+373,Sheffield,2014,47.0
+384,Wakefield,2011,58.0
+384,Wakefield,2012,64.0
+384,Wakefield,2013,65.0
+384,Wakefield,2014,72.0
+816,York,2011,66.0
+816,York,2012,72.0
+816,York,2013,67.0
+816,York,2014,61.0
+831,Derby,2011,82.0
+831,Derby,2012,84.0
+831,Derby,2013,81.0
+831,Derby,2014,77.0
+830,Derbyshire,2011,42.0
+830,Derbyshire,2012,45.0
+830,Derbyshire,2013,43.0
+830,Derbyshire,2014,40.0
+856,Leicester,2011,65.0
+856,Leicester,2012,67.0
+856,Leicester,2013,66.0
+856,Leicester,2014,67.0
+855,Leicestershire,2011,27.0
+855,Leicestershire,2012,28.0
+855,Leicestershire,2013,32.0
+855,Leicestershire,2014,34.0
+925,Lincolnshire,2011,35.0
+925,Lincolnshire,2012,36.0
+925,Lincolnshire,2013,42.0
+925,Lincolnshire,2014,43.0
+928,Northamptonshire,2011,48.0
+928,Northamptonshire,2012,51.0
+928,Northamptonshire,2013,46.0
+928,Northamptonshire,2014,52.0
+892,Nottingham,2011,85.0
+892,Nottingham,2012,86.0
+892,Nottingham,2013,90.0
+892,Nottingham,2014,92.0
+891,Nottinghamshire,2011,42.0
+891,Nottinghamshire,2012,49.0
+891,Nottinghamshire,2013,54.0
+891,Nottinghamshire,2014,51.0
+857,Rutland,2011,42.0
+857,Rutland,2012,36.0
+857,Rutland,2013,40.0
+857,Rutland,2014,44.0
+330,Birmingham,2011,70.0
+330,Birmingham,2012,69.0
+330,Birmingham,2013,68.0
+330,Birmingham,2014,65.0
+331,Coventry,2011,84.0
+331,Coventry,2012,82.0
+331,Coventry,2013,86.0
+331,Coventry,2014,87.0
+332,Dudley,2011,90.0
+332,Dudley,2012,100.0
+332,Dudley,2013,108.0
+332,Dudley,2014,112.0
+884,Herefordshire,2011,55.0
+884,Herefordshire,2012,59.0
+884,Herefordshire,2013,60.0
+884,Herefordshire,2014,67.0
+333,Sandwell,2011,74.0
+333,Sandwell,2012,78.0
+333,Sandwell,2013,79.0
+333,Sandwell,2014,75.0
+893,Shropshire,2011,36.0
+893,Shropshire,2012,34.0
+893,Shropshire,2013,40.0
+893,Shropshire,2014,45.0
+334,Solihull,2011,89.0
+334,Solihull,2012,81.0
+334,Solihull,2013,72.0
+334,Solihull,2014,72.0
+860,Staffordshire,2011,46.0
+860,Staffordshire,2012,52.0
+860,Staffordshire,2013,55.0
+860,Staffordshire,2014,56.0
+861,Stoke-On-Trent,2011,76.0
+861,Stoke-On-Trent,2012,81.0
+861,Stoke-On-Trent,2013,87.0
+861,Stoke-On-Trent,2014,98.0
+894,Telford and Wrekin,2011,70.0
+894,Telford and Wrekin,2012,77.0
+894,Telford and Wrekin,2013,82.0
+894,Telford and Wrekin,2014,79.0
+335,Walsall,2011,82.0
+335,Walsall,2012,77.0
+335,Walsall,2013,90.0
+335,Walsall,2014,98.0
+937,Warwickshire,2011,57.0
+937,Warwickshire,2012,61.0
+937,Warwickshire,2013,62.0
+937,Warwickshire,2014,62.0
+336,Wolverhampton,2011,88.0
+336,Wolverhampton,2012,102.0
+336,Wolverhampton,2013,117.0
+336,Wolverhampton,2014,136.0
+885,Worcestershire,2011,51.0
+885,Worcestershire,2012,52.0
+885,Worcestershire,2013,56.0
+885,Worcestershire,2014,56.0
+822,Bedford Borough,2011,46.0
+822,Bedford Borough,2012,60.0
+822,Bedford Borough,2013,68.0
+822,Bedford Borough,2014,74.0
+823,Central Bedfordshire,2011,32.0
+823,Central Bedfordshire,2012,37.0
+823,Central Bedfordshire,2013,43.0
+823,Central Bedfordshire,2014,46.0
+873,Cambridgeshire,2011,37.0
+873,Cambridgeshire,2012,36.0
+873,Cambridgeshire,2013,36.0
+873,Cambridgeshire,2014,39.0
+881,Essex,2011,54.0
+881,Essex,2012,50.0
+881,Essex,2013,42.0
+881,Essex,2014,38.0
+919,Hertfordshire,2011,44.0
+919,Hertfordshire,2012,42.0
+919,Hertfordshire,2013,41.0
+919,Hertfordshire,2014,39.0
+821,Luton,2011,75.0
+821,Luton,2012,74.0
+821,Luton,2013,73.0
+821,Luton,2014,74.0
+926,Norfolk,2011,58.0
+926,Norfolk,2012,61.0
+926,Norfolk,2013,65.0
+926,Norfolk,2014,69.0
+874,Peterborough,2011,71.0
+874,Peterborough,2012,77.0
+874,Peterborough,2013,78.0
+874,Peterborough,2014,80.0
+882,Southend-on-Sea,2011,72.0
+882,Southend-on-Sea,2012,64.0
+882,Southend-on-Sea,2013,62.0
+882,Southend-on-Sea,2014,65.0
+935,Suffolk,2011,52.0
+935,Suffolk,2012,51.0
+935,Suffolk,2013,49.0
+935,Suffolk,2014,48.0
+883,Thurrock,2011,55.0
+883,Thurrock,2012,62.0
+883,Thurrock,2013,67.0
+883,Thurrock,2014,72.0
+202,Camden,2011,73.0
+202,Camden,2012,67.0
+202,Camden,2013,65.0
+202,Camden,2014,54.0
+201,City Of London,2011,133.0
+201,City Of London,2012,102.0
+201,City Of London,2013,88.0
+201,City Of London,2014,87.0
+204,Hackney,2011,48.0
+204,Hackney,2012,56.0
+204,Hackney,2013,55.0
+204,Hackney,2014,56.0
+205,Hammersmith and Fulham,2011,78.0
+205,Hammersmith and Fulham,2012,70.0
+205,Hammersmith and Fulham,2013,72.0
+205,Hammersmith and Fulham,2014,60.0
+309,Haringey,2011,107.0
+309,Haringey,2012,100.0
+309,Haringey,2013,93.0
+309,Haringey,2014,87.0
+206,Islington,2011,90.0
+206,Islington,2012,91.0
+206,Islington,2013,83.0
+206,Islington,2014,81.0
+207,Kensington and Chelsea,2011,47.0
+207,Kensington and Chelsea,2012,52.0
+207,Kensington and Chelsea,2013,36.0
+207,Kensington and Chelsea,2014,36.0
+208,Lambeth,2011,83.0
+208,Lambeth,2012,84.0
+208,Lambeth,2013,81.0
+208,Lambeth,2014,87.0
+209,Lewisham,2011,77.0
+209,Lewisham,2012,78.0
+209,Lewisham,2013,77.0
+209,Lewisham,2014,77.0
+316,Newham,2011,64.0
+316,Newham,2012,58.0
+316,Newham,2013,51.0
+316,Newham,2014,50.0
+210,Southwark,2011,89.0
+210,Southwark,2012,93.0
+210,Southwark,2013,93.0
+210,Southwark,2014,91.0
+211,Tower Hamlets,2011,60.0
+211,Tower Hamlets,2012,53.0
+211,Tower Hamlets,2013,53.0
+211,Tower Hamlets,2014,55.0
+212,Wandsworth,2011,38.0
+212,Wandsworth,2012,39.0
+212,Wandsworth,2013,37.0
+212,Wandsworth,2014,36.0
+213,Westminster,2011,60.0
+213,Westminster,2012,58.0
+213,Westminster,2013,50.0
+213,Westminster,2014,46.0
+301,Barking and Dagenham,2011,78.0
+301,Barking and Dagenham,2012,78.0
+301,Barking and Dagenham,2013,75.0
+301,Barking and Dagenham,2014,80.0
+302,Barnet,2011,37.0
+302,Barnet,2012,36.0
+302,Barnet,2013,36.0
+302,Barnet,2014,36.0
+303,Bexley,2011,39.0
+303,Bexley,2012,45.0
+303,Bexley,2013,47.0
+303,Bexley,2014,46.0
+304,Brent,2011,56.0
+304,Brent,2012,51.0
+304,Brent,2013,48.0
+304,Brent,2014,48.0
+305,Bromley,2011,38.0
+305,Bromley,2012,41.0
+305,Bromley,2013,41.0
+305,Bromley,2014,38.0
+306,Croydon,2011,97.0
+306,Croydon,2012,84.0
+306,Croydon,2013,80.0
+306,Croydon,2014,86.0
+307,Ealing,2011,51.0
+307,Ealing,2012,53.0
+307,Ealing,2013,51.0
+307,Ealing,2014,49.0
+308,Enfield,2011,39.0
+308,Enfield,2012,39.0
+308,Enfield,2013,37.0
+308,Enfield,2014,37.0
+203,Greenwich,2011,99.0
+203,Greenwich,2012,92.0
+203,Greenwich,2013,92.0
+203,Greenwich,2014,85.0
+310,Harrow,2011,26.0
+310,Harrow,2012,29.0
+310,Harrow,2013,31.0
+310,Harrow,2014,30.0
+311,Havering,2011,39.0
+311,Havering,2012,36.0
+311,Havering,2013,36.0
+311,Havering,2014,40.0
+312,Hillingdon,2011,61.0
+312,Hillingdon,2012,57.0
+312,Hillingdon,2013,55.0
+312,Hillingdon,2014,55.0
+313,Hounslow,2011,61.0
+313,Hounslow,2012,56.0
+313,Hounslow,2013,51.0
+313,Hounslow,2014,53.0
+314,Kingston Upon Thames,2011,34.0
+314,Kingston Upon Thames,2012,38.0
+314,Kingston Upon Thames,2013,37.0
+314,Kingston Upon Thames,2014,33.0
+315,Merton,2011,31.0
+315,Merton,2012,30.0
+315,Merton,2013,31.0
+315,Merton,2014,33.0
+317,Redbridge,2011,30.0
+317,Redbridge,2012,31.0
+317,Redbridge,2013,29.0
+317,Redbridge,2014,29.0
+318,Richmond Upon Thames,2011,22.0
+318,Richmond Upon Thames,2012,19.0
+318,Richmond Upon Thames,2013,20.0
+318,Richmond Upon Thames,2014,20.0
+319,Sutton,2011,38.0
+319,Sutton,2012,36.0
+319,Sutton,2013,39.0
+319,Sutton,2014,45.0
+320,Waltham Forest,2011,52.0
+320,Waltham Forest,2012,51.0
+320,Waltham Forest,2013,44.0
+320,Waltham Forest,2014,41.0
+867,Bracknell Forest,2011,33.0
+867,Bracknell Forest,2012,38.0
+867,Bracknell Forest,2013,38.0
+867,Bracknell Forest,2014,42.0
+846,Brighton and Hove,2011,97.0
+846,Brighton and Hove,2012,97.0
+846,Brighton and Hove,2013,89.0
+846,Brighton and Hove,2014,92.0
+825,Buckinghamshire,2011,34.0
+825,Buckinghamshire,2012,33.0
+825,Buckinghamshire,2013,34.0
+825,Buckinghamshire,2014,38.0
+845,East Sussex,2011,57.0
+845,East Sussex,2012,60.0
+845,East Sussex,2013,57.0
+845,East Sussex,2014,55.0
+850,Hampshire,2011,39.0
+850,Hampshire,2012,39.0
+850,Hampshire,2013,40.0
+850,Hampshire,2014,45.0
+921,Isle Of Wight,2011,66.0
+921,Isle Of Wight,2012,60.0
+921,Isle Of Wight,2013,69.0
+921,Isle Of Wight,2014,74.0
+886,Kent,2011,53.0
+886,Kent,2012,56.0
+886,Kent,2013,56.0
+886,Kent,2014,56.0
+887,Medway Towns,2011,69.0
+887,Medway Towns,2012,73.0
+887,Medway Towns,2013,67.0
+887,Medway Towns,2014,61.0
+826,Milton Keynes,2011,45.0
+826,Milton Keynes,2012,45.0
+826,Milton Keynes,2013,45.0
+826,Milton Keynes,2014,47.0
+931,Oxfordshire,2011,31.0
+931,Oxfordshire,2012,33.0
+931,Oxfordshire,2013,30.0
+931,Oxfordshire,2014,33.0
+851,Portsmouth,2011,75.0
+851,Portsmouth,2012,70.0
+851,Portsmouth,2013,72.0
+851,Portsmouth,2014,75.0
+870,Reading,2011,65.0
+870,Reading,2012,71.0
+870,Reading,2013,66.0
+870,Reading,2014,60.0
+871,Slough,2011,46.0
+871,Slough,2012,45.0
+871,Slough,2013,48.0
+871,Slough,2014,49.0
+852,Southampton,2011,85.0
+852,Southampton,2012,93.0
+852,Southampton,2013,103.0
+852,Southampton,2014,105.0
+936,Surrey,2011,30.0
+936,Surrey,2012,33.0
+936,Surrey,2013,33.0
+936,Surrey,2014,31.0
+869,West Berkshire,2011,35.0
+869,West Berkshire,2012,35.0
+869,West Berkshire,2013,41.0
+869,West Berkshire,2014,45.0
+938,West Sussex,2011,46.0
+938,West Sussex,2012,41.0
+938,West Sussex,2013,40.0
+938,West Sussex,2014,36.0
+868,Windsor and Maidenhead,2011,32.0
+868,Windsor and Maidenhead,2012,30.0
+868,Windsor and Maidenhead,2013,32.0
+868,Windsor and Maidenhead,2014,32.0
+872,Wokingham,2011,21.0
+872,Wokingham,2012,20.0
+872,Wokingham,2013,24.0
+872,Wokingham,2014,20.0
+800,Bath and North East Somerset,2011,48.0
+800,Bath and North East Somerset,2012,49.0
+800,Bath and North East Somerset,2013,41.0
+800,Bath and North East Somerset,2014,43.0
+837,Bournemouth,2011,65.0
+837,Bournemouth,2012,79.0
+837,Bournemouth,2013,81.0
+837,Bournemouth,2014,84.0
+801,"Bristol, City of",2011,79.0
+801,"Bristol, City of",2012,78.0
+801,"Bristol, City of",2013,80.0
+801,"Bristol, City of",2014,77.0
+908,Cornwall,2011,46.0
+908,Cornwall,2012,47.0
+908,Cornwall,2013,45.0
+908,Cornwall,2014,43.0
+878,Devon,2011,46.0
+878,Devon,2012,50.0
+878,Devon,2013,49.0
+878,Devon,2014,48.0
+835,Dorset,2011,36.0
+835,Dorset,2012,39.0
+835,Dorset,2013,45.0
+835,Dorset,2014,44.0
+916,Gloucestershire,2011,39.0
+916,Gloucestershire,2012,38.0
+916,Gloucestershire,2013,43.0
+916,Gloucestershire,2014,39.0
+420,Isles Of Scilly,2011,0.0
+420,Isles Of Scilly,2012,0.0
+420,Isles Of Scilly,2013,0.0
+420,Isles Of Scilly,2014,0.0
+802,North Somerset,2011,55.0
+802,North Somerset,2012,56.0
+802,North Somerset,2013,60.0
+802,North Somerset,2014,52.0
+879,Plymouth,2011,74.0
+879,Plymouth,2012,75.0
+879,Plymouth,2013,73.0
+879,Plymouth,2014,77.0
+836,Poole,2011,46.0
+836,Poole,2012,54.0
+836,Poole,2013,50.0
+836,Poole,2014,51.0
+933,Somerset,2011,41.0
+933,Somerset,2012,45.0
+933,Somerset,2013,47.0
+933,Somerset,2014,45.0
+803,South Gloucestershire,2011,37.0
+803,South Gloucestershire,2012,37.0
+803,South Gloucestershire,2013,29.0
+803,South Gloucestershire,2014,29.0
+866,Swindon,2011,51.0
+866,Swindon,2012,55.0
+866,Swindon,2013,53.0
+866,Swindon,2014,53.0
+880,Torbay,2011,89.0
+880,Torbay,2012,100.0
+880,Torbay,2013,121.0
+880,Torbay,2014,127.0
+865,Wiltshire,2011,37.0
+865,Wiltshire,2012,40.0
+865,Wiltshire,2013,43.0
+865,Wiltshire,2014,38.0
