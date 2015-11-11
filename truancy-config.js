@@ -14,34 +14,36 @@ module.exports = {
   /*
    * Access token credentials
    */
-  "credentials": "EJQ_SPh-g:password",
+  "credentials": "4kClAjSzg:password",
   
   /*
-   * The target dataset in the hub.
+   * The schema of the target dataset.
    */
-  "targetDataset": {
-    "id": "4JewQ6Uh-g",
-    "scheme": {
-      "ecode": "String",
-      "name": "String",
-      "year": "String",
-      "value": "Number"
-    },
-    "uniqueIndex": ["ecode"]
+  "schema": {
+    "code": "String",
+    "year": "String",
+    "value": "Number"
   },
+  
+  /*
+   * The fields that form the primary key.
+   */
+  "primaryKey": ["code"],
 
   /*
-   * Define how the CSV columns will map to the schema defined in the dataset.
-   * The schemaMapping array will reflect the order of the columns in the CSV.
-   * If a target is defined for a column the data will be copied to the named field in the dataset.
-   * If there is no target property that column will be ignored.
+   * The schemaMapping is a dictionary mapping the CSV headings to target schema field.
+   * If a CSV header column is defined in the schema the data will be copied to the named field in the dataset.
+   * If a CSV header column is defined as blank in the schema, the column will be skipped.
+   * If there is no entry for a given CSV heading, the data will be copied to a field with the name of the heading.
    */
-  "schemaMapping": [
-    { "target": "ecode" },  // copy data from csv column 1 to the 'ons' field
-    { "target": "name" }, 
-    { "target": "year"},  // copy data from csv column 3 to the 'area' field
-    { "target": "value"}  // copy data from csv column 4 to the 'value' field
-  ],
+  "schemaMapping": { 
+    "ecode": "code",  // Copy from the "ecode" CSV column to the "code" field.
+    "name": "",       // Skip this column (don't copy any data).
+    /*
+    "year": "year",   // Copy from "year" to "year" - not necessary as this is the default behaviour.
+    "value": "value"  // Copy from "value" to "value" - not necessary as this is the default behaviour.
+    */
+  },
 
   /*
    * The location of the source file.
@@ -60,7 +62,7 @@ module.exports = {
    * suitable for larger files.
    *
    * localStream => file is downloaded and then streamed into the parser and
-   * processed as data becomes available. Suitable for larger files.
+   * processed as data becomes available. Suitable for larger files (default).
    *
    * remoteStream => file is not downloaded but streamed directly from the
    * remote url into the parser and processed as data becomes available.
