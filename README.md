@@ -3,23 +3,23 @@ Generic importer for importing CSV files into nqm datasets.
 
 ##basic usage
 
+```
+DEBUG=log node nqmCSVImport --credentials 4kClAjSzg:password --sourceFile tests/tempPerTru.csv 
+```
+
 Basic import of new dataset where the schema is inferred from the source CSV and no primary key is defined. The dataset will be created using a name based on the source file. Having no primary key means that it is not possible to update the data and all data will be appended to the dataset.
 
 ```
-node nqmCSVImport --credentials 4kClAjSzg:password --sourceFile tests/tempPerTru.csv 
+DEBUG=log node nqmCSVImport --credentials 4kClAjSzg:password --sourceFile tests/tempAlevels.csv --primaryKey ecode,year
 ```
 
 Import new dataset specifying a primary key. Subsequent updates are possible. The dataset will be created using a name based on the source file.   
 
 ```
-node nqmCSVImport --credentials 4kClAjSzg:password --sourceFile tests/tempAlevels.csv --primaryKey ecode,year
+DEBUG=log node nqmCSVImport --credentials 4kClAjSzg:password --sourceFile tests/tempAlevels.csv --primaryKey ecode,year --targetDataset 4ybvaLm2zx
 ```
 
 Import data to an existing dataset. As a primary key is given "upsert" operations will be performed.
-
-```
-node nqmCSVImport --credentials 4kClAjSzg:password --sourceFile tests/tempAlevels.csv --primaryKey ecode,year --targetDataset 4ybvaLm2zx
-```
 
 ##advanced usage
 
@@ -113,14 +113,14 @@ If generating it manually you will need to configure the correct ```commandHost`
 }
 ```
 
-##running
+##running with a config file
 Pass the name of the configuration as an argument to the script.
 
 ```
-node nqmCSVImport --config truancy-config.js
+DEBUG=log node nqmCSVImport --config truancy-config.js
 ```
 
-To get debug/diagnostic information switch on logging:
+To get debug/diagnostic information switch on full logging:
 
 ```
 DEBUG=* node nqmCSVImport --config trunacy-config.js
@@ -130,7 +130,7 @@ DEBUG=* node nqmCSVImport --config trunacy-config.js
 Clone this repository then:
 
 ```
-cd nqmCSVImporter
+cd nqm-csv-import
 npm install
 ```
 
