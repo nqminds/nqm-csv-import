@@ -18,7 +18,7 @@ module.exports = {
   /*
    * Access token credentials
    */
-  "credentials": "4kClAjSzg:password",
+  "credentials": "<tokenId:secret>",
   
   /*
    * The target dataset in the hub.

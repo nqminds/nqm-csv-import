@@ -7,7 +7,7 @@ module.exports = {
    */
   "commandHost": "http://localhost:3103",
   
-  "credentials": "4kClAjSzg:password",
+  "credentials": "<tokenId:secret>",
   
   inferSchema: true,
   

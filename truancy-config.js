@@ -14,7 +14,7 @@ module.exports = {
   /*
    * Access token credentials
    */
-  "credentials": "4kClAjSzg:password",
+  "credentials": "<tokenId:secret>",
   
   /*
    * The schema of the target dataset.
