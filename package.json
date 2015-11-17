@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "nqm-csv-import": "./nqm-csv-import.js"
+  },
   "author": "toby.ealden@gmail.com",
   "license": "ISC",
   "dependencies": {

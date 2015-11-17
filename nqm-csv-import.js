@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 /**
  * Created by toby on 29/06/15.
  */
